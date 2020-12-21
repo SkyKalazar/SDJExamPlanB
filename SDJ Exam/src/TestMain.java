@@ -15,6 +15,10 @@ public class TestMain {
     Lesson sdj = new Lesson("Reap and Sow", wick, start, end, geralt);
 
     System.out.println(sdj);
+    System.out.println(sdj.getDuration());
+    sdj.delayBy(100);
+    System.out.println(sdj);
+    System.out.println(sdj.getDateTimeString());
 
   }
 }
