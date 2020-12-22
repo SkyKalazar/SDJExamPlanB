@@ -72,7 +72,7 @@ public class Lesson {
     return date + " " + start + " - " + end;
   }
   public String toString() {
-    return "Topic: " + topic + ", " + getDateTimeString() + "\nResources: " + Arrays.toString(resources);
+    return "\nTopic: " + topic + ", " + getDateTimeString() + "\nResources: " + Arrays.toString(resources);
   }
 
 

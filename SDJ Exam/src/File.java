@@ -20,6 +20,6 @@ public class File {
   }
 
   public String toString() {
-    return "File{" + "fileName='" + fileName + '\'' + ", extension='" + extension + '\'' + '}';
+    return "\nFile name: " + fileName + ". Extension: " + extension;
   }
 }
