@@ -41,7 +41,7 @@ public class Student {
   public Grade[] getAllGrades() {
     Grade[] temp = new Grade[grades.size()];
     for(int i = 0; i < grades.size(); i++) {
-      temp[i] = grades.get(i);
+      temp[i] = grades.get(i).copy();
     }
     return temp;
   }

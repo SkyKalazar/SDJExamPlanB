@@ -29,7 +29,7 @@ public class Lesson {
   public Date getDate() {
     return date.copy();
   }
-  //Currently returns the address, not the actual values of the elements
+  //Currently returns the address, not the actual values of elements
   public File[] getResources() {
     return resources;
   }
