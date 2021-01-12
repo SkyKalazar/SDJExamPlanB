@@ -60,10 +60,11 @@ public class Course {
     }
     return temp;
   }
-  public ArrayList<DiscordLesson> getDiscordLessons() {
+
+  public ArrayList<DiscordLesson> getDiscordLessonsWithVoice() {
     ArrayList<DiscordLesson> temp = new ArrayList<>();
     for(Lesson lesson : schedule) {
-      if(lesson instanceof DiscordLesson)
+      if(lesson instanceof DiscordLesson && ((DiscordLesson) lesson).usesVoiceChannel())
         temp.add((DiscordLesson)lesson);
     }
     return temp;
@@ -71,7 +72,11 @@ public class Course {
   public ArrayList<File> getAllResources() {
     ArrayList<File> temp = new ArrayList<>();
     for(Lesson lesson : schedule) {
-      temp.addAll(Arrays.asList(lesson.getResources()));
+      for(int i = 0; i < lesson.getResources().length; i++) {
+        if(!(temp.contains(lesson.getResources()[i])))
+          temp.add(lesson.getResources()[i]);
+
+      }
     }
     return temp;
   }

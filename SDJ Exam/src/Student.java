@@ -25,8 +25,7 @@ public class Student {
   public void addGrade(int grade, Course course) {
     for(Course subject : courses) {
       if(subject.equals(course)) {
-        Grade temp = new Grade(grade, course);
-        grades.add(temp.copy());
+        grades.add(new Grade(grade, course));
       }
     }
   }
@@ -37,15 +36,15 @@ public class Student {
     }
     return sum/grades.size();
   }
-  //Returns the address
-  public Grade[] getAllGrades() {
+
+  public Grade[] getAllGrades() { 
     Grade[] temp = new Grade[grades.size()];
     for(int i = 0; i < grades.size(); i++) {
       temp[i] = grades.get(i).copy();
     }
     return temp;
   }
-  //Returns the address
+
   public Course[] getAllCourses() {
     Course[] temp = new Course[courses.size()];
     for(int i = 0; i < courses.size(); i++) {

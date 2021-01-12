@@ -34,19 +34,22 @@ public class TestMain {
     Course dbs = new Course("Database Structures");
     dbs.addLesson(lesson1);
     dbs.addLesson(lesson3);
+    dbs.addLesson(lesson2);
 
 //    System.out.println(dbs);
 //    System.out.println(dbs.getAllLessons());
 //    dbs.removeLesson(lesson3);
+//    System.out.println(dbs.getAllTopics());
 //    System.out.println(dbs);
 //    dbs.addLesson(lesson3);
 //    System.out.println(dbs.getAllResources());
 //    System.out.println(dbs.getAllTopics());
-//    System.out.println(dbs.getDiscordLessons());
+//    System.out.println(dbs.getDiscordLessonsWithVoice());
 //    System.out.println(dbs.getNumberOfLessons());
 //    System.out.println(dbs.getOnlineLessons());
 //    System.out.println(dbs.getSkypeLessons());
 //    System.out.println(dbs.hasLessonOnDate(date2));
+
 
 
     Student geralt = new Student(4567, "Geralt");
@@ -58,14 +61,14 @@ public class TestMain {
     geralt.addGrade(12, dbs);
     geralt.addGrade(7, dbs);
     geralt.addGrade(7, mse);
-    System.out.println(Arrays.toString(geralt.getAllGrades()));
-    System.out.println(Arrays.toString(geralt.getAllCourses()));
-    System.out.println(geralt.getGradeAverage());
-    System.out.println(geralt);
-    System.out.println(geralt.getAllGrades()[1]);
-
-    Grade grade1 = new Grade(10, mse);
-    System.out.println(grade1);
+//    System.out.println(Arrays.toString(geralt.getAllGrades()));
+//    System.out.println(Arrays.toString(geralt.getAllCourses()));
+//    System.out.println(geralt.getGradeAverage());
+//    System.out.println(geralt);
+//    System.out.println(geralt.getAllGrades()[1]);
+//
+//    Grade grade1 = new Grade(10, mse);
+//    System.out.println(grade1);
 
 
 
